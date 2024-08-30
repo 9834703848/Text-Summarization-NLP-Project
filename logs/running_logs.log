@@ -62,3 +62,113 @@ x==========x]
 [2024-08-28 17:53:31,234: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2024-08-28 17:56:11,722: INFO: config: PyTorch version 2.4.0 available.]
+[2024-08-28 17:56:13,520: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-28 17:56:13,523: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-28 17:56:13,524: INFO: common: created directory at: artifacts]
+[2024-08-28 17:56:13,526: INFO: common: created directory at: artifacts/data_transformation]
+[2024-08-28 17:58:33,158: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-28 17:58:33,161: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-28 17:58:33,163: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-28 17:58:33,163: INFO: common: created directory at: artifacts]
+[2024-08-28 17:58:33,164: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-08-28 17:58:33,164: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-08-28 17:58:33,267: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-28 17:58:33,267: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-08-28 17:58:33,270: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-28 17:58:33,272: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-28 17:58:33,272: INFO: common: created directory at: artifacts]
+[2024-08-28 17:58:33,273: INFO: common: created directory at: artifacts/data_validation]
+[2024-08-28 17:58:33,277: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-08-28 17:58:33,278: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-08-28 17:58:33,278: ERROR: main: name 'DataTransformationTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "C:\shri_code\Text-Summarization-NLP-Project\main.py", line 37, in <module>
+    data_transformation = DataTransformationTrainingPipeline()
+NameError: name 'DataTransformationTrainingPipeline' is not defined
+[2024-08-28 17:59:10,129: INFO: config: PyTorch version 2.4.0 available.]
+[2024-08-28 17:59:10,545: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-28 17:59:10,548: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-28 17:59:10,550: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-28 17:59:10,551: INFO: common: created directory at: artifacts]
+[2024-08-28 17:59:10,552: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-08-28 17:59:10,552: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-08-28 17:59:10,653: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-28 17:59:10,653: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-08-28 17:59:10,656: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-28 17:59:10,658: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-28 17:59:10,659: INFO: common: created directory at: artifacts]
+[2024-08-28 17:59:10,659: INFO: common: created directory at: artifacts/data_validation]
+[2024-08-28 17:59:10,665: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-08-28 17:59:10,665: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-08-28 17:59:10,668: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-28 17:59:10,671: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-28 17:59:10,671: INFO: common: created directory at: artifacts]
+[2024-08-28 17:59:10,672: INFO: common: created directory at: artifacts/data_transformation]
+[2024-08-28 17:59:13,650: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-08-28 18:00:21,200: INFO: config: PyTorch version 2.4.0 available.]
+[2024-08-28 18:20:26,929: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-28 18:20:26,932: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-28 18:20:26,934: INFO: common: created directory at: artifacts]
+[2024-08-28 18:20:26,935: INFO: common: created directory at: artifacts/model_trainer]
+[2024-08-28 18:24:11,902: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-28 18:24:11,905: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-28 18:24:11,906: INFO: common: created directory at: artifacts]
+[2024-08-28 18:24:11,907: INFO: common: created directory at: artifacts/model_trainer]
+[2024-08-28 18:25:29,197: INFO: config: PyTorch version 2.4.0 available.]
+[2024-08-28 18:25:29,587: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-28 18:25:29,590: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-28 18:25:29,592: INFO: common: created directory at: artifacts]
+[2024-08-28 18:25:29,592: INFO: common: created directory at: artifacts/model_trainer]
+[2024-08-28 18:32:29,666: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-28 18:32:29,669: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-28 18:32:29,670: INFO: common: created directory at: artifacts]
+[2024-08-28 18:32:29,671: INFO: common: created directory at: artifacts/model_trainer]
+[2024-08-30 15:25:47,693: INFO: config: PyTorch version 2.4.0 available.]
+[2024-08-30 15:27:36,542: INFO: config: PyTorch version 2.4.0 available.]
+[2024-08-30 15:27:39,153: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-30 15:27:39,164: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-30 15:27:39,167: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-30 15:27:39,167: INFO: common: created directory at: artifacts]
+[2024-08-30 15:27:39,167: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-08-30 15:27:39,168: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-08-30 15:27:39,265: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-30 15:27:39,266: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-08-30 15:27:39,268: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-30 15:27:39,270: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-30 15:27:39,270: INFO: common: created directory at: artifacts]
+[2024-08-30 15:27:39,271: INFO: common: created directory at: artifacts/data_validation]
+[2024-08-30 15:27:39,274: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-08-30 15:27:39,274: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-08-30 15:27:39,276: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-30 15:27:39,277: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-30 15:27:39,278: INFO: common: created directory at: artifacts]
+[2024-08-30 15:27:39,278: INFO: common: created directory at: artifacts/data_transformation]
+[2024-08-30 15:27:40,575: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-08-30 15:27:40,576: INFO: main: *******************]
+[2024-08-30 15:27:40,576: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-08-30 15:27:40,579: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-30 15:27:40,582: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-30 15:27:40,582: INFO: common: created directory at: artifacts]
+[2024-08-30 15:27:40,582: INFO: common: created directory at: artifacts/model_trainer]
+[2024-08-30 15:29:45,328: INFO: config: PyTorch version 2.4.0 available.]
+[2024-08-30 15:29:46,121: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-08-30 15:29:46,124: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-08-30 15:29:46,125: INFO: common: created directory at: artifacts]
+[2024-08-30 15:29:46,126: INFO: common: created directory at: artifacts/model_evaluation]
