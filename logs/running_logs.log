@@ -1,0 +1,182 @@
+[2026-01-23 22:33:40,579: INFO: server: Started server process [202168]]
+[2026-01-23 22:33:40,579: INFO: on: Waiting for application startup.]
+[2026-01-23 22:33:40,579: INFO: on: Application startup complete.]
+[2026-01-23 22:33:40,579: INFO: server: Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)]
+[2026-01-23 22:35:05,637: INFO: server: Shutting down]
+[2026-01-23 22:35:51,105: INFO: server: Finished server process [202168]]
+[2026-01-23 22:35:51,109: ERROR: on: Traceback (most recent call last):
+  File "/home/shrinath/ShriCode/Text-Summarization-NLP-Project/venv/lib/python3.12/site-packages/starlette/routing.py", line 638, in lifespan
+    await receive()
+  File "/home/shrinath/ShriCode/Text-Summarization-NLP-Project/venv/lib/python3.12/site-packages/uvicorn/lifespan/on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+]
+[2026-01-23 22:47:30,928: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-23 22:47:30,929: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-23 22:47:30,930: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-23 22:47:30,930: INFO: common: created directory at: artifacts]
+[2026-01-23 22:47:30,930: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-23 22:47:33,293: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: CC96:17428C:157549C:183E8A4:6973EC73
+Accept-Ranges: bytes
+Date: Fri, 23 Jan 2026 21:47:31 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fra-etou8220077-FRA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1769204852.625541,VS0,VE370
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 76dd24fd9e316a5430cc39c897a08de09508413f
+Expires: Fri, 23 Jan 2026 21:52:31 GMT
+Source-Age: 0
+
+]
+[2026-01-23 22:47:33,394: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-23 22:47:33,394: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-01-23 22:47:33,395: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-23 22:47:33,395: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-23 22:47:33,395: INFO: common: created directory at: artifacts]
+[2026-01-23 22:47:33,395: INFO: common: created directory at: artifacts/data_validation]
+[2026-01-23 22:47:33,396: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-01-23 22:47:33,396: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-01-23 22:47:33,397: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-23 22:47:33,397: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-23 22:47:33,397: INFO: common: created directory at: artifacts]
+[2026-01-23 22:47:33,397: INFO: common: created directory at: artifacts/data_transformation]
+[2026-01-23 22:47:37,404: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-01-23 22:47:37,404: INFO: main: *******************]
+[2026-01-23 22:47:37,404: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-01-23 22:47:37,405: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-23 22:47:37,405: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-23 22:47:37,405: INFO: common: created directory at: artifacts]
+[2026-01-23 22:47:37,406: INFO: common: created directory at: artifacts/model_trainer]
+[2026-01-23 22:55:08,295: ERROR: main: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy']
+Traceback (most recent call last):
+  File "/home/shrinath/ShriCode/Text-Summarization-NLP-Project/main.py", line 51, in <module>
+    model_trainer.main()
+  File "/home/shrinath/ShriCode/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer.train()
+  File "/home/shrinath/ShriCode/Text-Summarization-NLP-Project/src/textSummarizer/conponents/model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+                   ^^^^^^^^^^^^^^^^^^
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+[2026-01-23 23:09:57,471: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-23 23:09:57,472: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-23 23:09:57,473: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-23 23:09:57,473: INFO: common: created directory at: artifacts]
+[2026-01-23 23:09:57,473: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-23 23:09:57,473: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2026-01-23 23:09:57,556: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-23 23:09:57,556: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-01-23 23:09:57,557: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-23 23:09:57,558: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-23 23:09:57,558: INFO: common: created directory at: artifacts]
+[2026-01-23 23:09:57,558: INFO: common: created directory at: artifacts/data_validation]
+[2026-01-23 23:09:57,558: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-01-23 23:09:57,558: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-01-23 23:09:57,560: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-23 23:09:57,560: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-23 23:09:57,560: INFO: common: created directory at: artifacts]
+[2026-01-23 23:09:57,560: INFO: common: created directory at: artifacts/data_transformation]
+[2026-01-23 23:09:58,675: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-01-23 23:09:58,675: INFO: main: *******************]
+[2026-01-23 23:09:58,675: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-01-23 23:09:58,676: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-23 23:09:58,676: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-23 23:09:58,676: INFO: common: created directory at: artifacts]
+[2026-01-23 23:09:58,676: INFO: common: created directory at: artifacts/model_trainer]
+[2026-01-23 23:10:03,265: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=0.26.0'`]
+Traceback (most recent call last):
+  File "/home/shrinath/ShriCode/Text-Summarization-NLP-Project/main.py", line 51, in <module>
+    model_trainer.main()
+  File "/home/shrinath/ShriCode/Text-Summarization-NLP-Project/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer.train()
+  File "/home/shrinath/ShriCode/Text-Summarization-NLP-Project/src/textSummarizer/conponents/model_trainer.py", line 25, in train
+    trainer_args = TrainingArguments(
+                   ^^^^^^^^^^^^^^^^^^
+  File "<string>", line 135, in __init__
+  File "/home/shrinath/ShriCode/Text-Summarization-NLP-Project/venv/lib/python3.12/site-packages/transformers/training_args.py", line 1811, in __post_init__
+    self.device
+  File "/home/shrinath/ShriCode/Text-Summarization-NLP-Project/venv/lib/python3.12/site-packages/transformers/training_args.py", line 2355, in device
+    return self._setup_devices
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/functools.py", line 995, in __get__
+    val = self.func(instance)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/shrinath/ShriCode/Text-Summarization-NLP-Project/venv/lib/python3.12/site-packages/transformers/training_args.py", line 2225, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=0.26.0'`
+[2026-01-23 23:11:20,398: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-23 23:11:20,400: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-23 23:11:20,400: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-23 23:11:20,400: INFO: common: created directory at: artifacts]
+[2026-01-23 23:11:20,400: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-23 23:11:20,400: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2026-01-23 23:11:20,480: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-23 23:11:20,480: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-01-23 23:11:20,481: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-23 23:11:20,482: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-23 23:11:20,482: INFO: common: created directory at: artifacts]
+[2026-01-23 23:11:20,482: INFO: common: created directory at: artifacts/data_validation]
+[2026-01-23 23:11:20,482: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-01-23 23:11:20,482: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-01-23 23:11:20,483: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-23 23:11:20,483: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-23 23:11:20,484: INFO: common: created directory at: artifacts]
+[2026-01-23 23:11:20,484: INFO: common: created directory at: artifacts/data_transformation]
+[2026-01-23 23:11:21,695: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-01-23 23:11:21,695: INFO: main: *******************]
+[2026-01-23 23:11:21,695: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-01-23 23:11:21,696: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2026-01-23 23:11:21,697: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-23 23:11:21,697: INFO: common: created directory at: artifacts]
+[2026-01-23 23:11:21,697: INFO: common: created directory at: artifacts/model_trainer]
+[2026-01-24 01:03:30,280: INFO: server: Started server process [239274]]
+[2026-01-24 01:03:30,280: INFO: on: Waiting for application startup.]
+[2026-01-24 01:03:30,281: INFO: on: Application startup complete.]
+[2026-01-24 01:03:30,281: INFO: server: Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)]
+[2026-01-24 01:06:30,675: INFO: server: Shutting down]
+[2026-01-24 01:06:30,776: INFO: server: Finished server process [239274]]
+[2026-01-24 01:06:30,781: ERROR: on: Traceback (most recent call last):
+  File "/home/shrinath/ShriCode/Text-Summarization-NLP-Project/venv/lib/python3.12/site-packages/starlette/routing.py", line 638, in lifespan
+    await receive()
+  File "/home/shrinath/ShriCode/Text-Summarization-NLP-Project/venv/lib/python3.12/site-packages/uvicorn/lifespan/on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+]
