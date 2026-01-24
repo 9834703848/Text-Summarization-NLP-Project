@@ -235,7 +235,7 @@
                 formData.append('text', dialogueText);
                 
                 // Make API call
-                const response = await fetch('/predict', {
+                const response = await fetch('/summarizer/predict', {
                     method: 'POST',
                     body: formData
                 });
